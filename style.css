@@ -73,3 +73,18 @@
     width: 100px;
   }
   
+  .frente_para_atras {
+    transform: rotateY(-180deg);
+}
+
+    .atras_para_frente {
+    transform: rotateY(0deg);
+}
+
+    .matchFrontFace {
+    transform: rotateY(-180deg);
+}
+
+    .matchBackFace {
+    transform: rotateY(0deg);
+}
