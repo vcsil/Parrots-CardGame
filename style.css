@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EEF9BF;
+    font-family: 'Roboto', sans-serif;
+}  
+
+header {
+    width: 100%;
+    padding: 3.5rem 0.25rem 1rem 0.25rem;
+}
+
+header > h1 {
+    text-transform: uppercase;
+    color: #75B79E;
+    font-size: 63px;
+    font-weight: bold;
+    text-align: center;
+}
+
+main {
+    width: 70%;
+    height: auto;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+main > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container {
+    width: 151px;
+    height: 146px;
+    margin-bottom: 34px;
+    position: relative;
+}
+
+.carta {
+    width: 117px;
+    height: 146px;
+    background-color: #A7E9AF;
+    border: 1px solid #99CEA8;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;    
+    transition: all 0.5s;
+}
+
+.atras {
+    background-image: url(midia/front.png);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all .5s;
+    transform-style: preserve-3d;
+    box-shadow: 3px 3px 8px #969696;
+    cursor: pointer;
+}
+
+.frente {
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+.carta img {
+    width: 100px;
+}
+
+.frente_para_atras {
+    transform: rotateY(-180deg);
+}
+
+.atras_para_frente {
+    transform: rotateY(0deg);
+}
