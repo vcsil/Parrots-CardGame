@@ -1,82 +1,75 @@
 * {
     box-sizing: border-box;
-}
-
-body {
-    background-color: #EEF9BF;
-    font-family: 'Roboto', sans-serif;
-}  
-
-header {
+  }
+  
+  body {
+    background-color: #eef9bf;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  header {
     width: 100%;
     padding: 3.5rem 0.25rem 1rem 0.25rem;
-}
-
-header > h1 {
+  }
+  
+  header > h1 {
     text-transform: uppercase;
-    color: #75B79E;
+    color: #75b79e;
     font-size: 63px;
     font-weight: bold;
     text-align: center;
-}
-
-main {
+  }
+  
+  main {
     width: 70%;
     height: auto;
     margin: auto;
     margin-top: 2rem;
-}
-
-main > ul {
+  }
+  
+  main > ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-}
-
-.container {
+  }
+  
+  .container {
     width: 151px;
     height: 146px;
     margin-bottom: 34px;
     position: relative;
-}
-
-.carta {
+  }
+  
+  .carta {
     width: 117px;
     height: 146px;
-    background-color: #A7E9AF;
-    border: 1px solid #99CEA8;
+    background-color: #a7e9af;
+    border: 1px solid #99cea8;
     border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;    
+    position: absolute;
     transition: all 0.5s;
-}
-
-.atras {
+    backface-visibility: hidden;
+  }
+  
+  .atras {
     background-image: url(midia/front.png);
     background-size: 100px;
     background-repeat: no-repeat;
     background-position: center;
-    transition: all .5s;
+    transition: all 0.5s;
     transform-style: preserve-3d;
     box-shadow: 3px 3px 8px #969696;
     cursor: pointer;
-}
-
-.frente {
+  }
+  
+  .frente {
     transform: rotateY(180deg);
-    backface-visibility: hidden;
-}
-
-.carta img {
+  }
+  
+  .carta img {
     width: 100px;
-}
-
-.frente_para_atras {
-    transform: rotateY(-180deg);
-}
-
-.atras_para_frente {
-    transform: rotateY(0deg);
-}
+  }
+  
